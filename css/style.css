@@ -17,12 +17,14 @@ body {
 .page {
     width: 100%;
 }
-
 .header_bar {
     min-height: 160px;
     padding: 0 50px;
     display: flex;
     align-items: center;
+}
+.header_bar .branding > * {
+    margin-top: 10px;
 }
 .header_bar .header__logo {
     max-width: 190px;
@@ -44,7 +46,8 @@ body {
     margin-left: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .header__widgets > * {
     margin: 0 20px;
