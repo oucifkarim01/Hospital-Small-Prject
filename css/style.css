@@ -1,0 +1,111 @@
+/* Imports */
+@import 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+:root {
+    --primary-color:#eb3b5a;
+    --dark-primary-color:#be2441;
+    --light-color: #ff879c;
+
+    --shadow-1: 0px 0px 2px 0px rgb(0 0 0 / 45%);
+    --shadow-1-hover: 0px 0px 2px 0px rgb(0 0 0 / 45%);
+    --trans-1 : .1s all ease-in-out;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.page {
+    width: 100%;
+}
+
+.header_bar {
+    min-height: 160px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+.header_bar .header__logo {
+    max-width: 190px;
+}
+.header_bar .branding {
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.branding .hidden-data {
+    display: none;
+}
+
+/*Header Widgets */
+.header__widgets {
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header__widgets > * {
+    margin: 0 20px;
+}
+.header__socials a {
+    display: inline-block;
+}
+.header__socials a img{
+    height: 24px;
+    width: 24px;
+    padding: 8px 5px 8px 5px;
+    transition: var(--trans-1);
+}
+.header__socials a:hover img {
+    box-shadow: var(--shadow-1);    
+}
+.header__actions .make_appoint {
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: var(--shadow-1);
+    cursor: pointer;
+    transition: var(--trans-1);
+}
+.header__actions .make_appoint:hover{
+    background: var(--dark-primary-color);
+    box-shadow: var(--shadow-1-hover);
+}
+/*header info contact items*/
+.header__info .info__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info__item .text {
+    display: flex;
+    flex-direction: column;
+}
+.info__item .icon i {
+    font-size: 40px;
+    color: var(--light-color);
+}
+.info__item .text {
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.info__item .text span:first-child {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+.info__item .text span a {
+    color: var(--dark-primary-color);
+    transition: var(--trans-1);
+}
+.info__item .text span a:hover {
+    color: var(--light-color);
+}
