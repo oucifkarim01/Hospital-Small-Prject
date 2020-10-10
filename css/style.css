@@ -20,6 +20,8 @@ body {
 .header_bar {
     min-height: 160px;
     padding: 0 50px;
+    max-width: calc(1250px - 100px);
+    margin: 0 auto;
     display: flex;
     align-items: center;
 }
@@ -47,7 +49,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 .header__widgets > * {
     margin: 0 20px;
