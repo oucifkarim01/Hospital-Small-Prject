@@ -293,3 +293,83 @@ body {
     height: 300px;
     width: 100%;
 } 
+
+/* Services Section :   */
+.services__section .section__inner {
+    padding: 25px 0 ;
+}
+.services__section .section__header {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 30px 0;
+    max-width: fit-content;
+}
+.services__section .section__header h3 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    padding-bottom: 12px;
+    color: var(--dark-primary-color);
+    position: relative;
+}
+.services__section .section__header h3::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    height: 5px;
+    background-color: var(--primary-color);
+}
+.services__section .section__body .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.services__section .service__item {
+    min-width: 200px;
+    max-width: 33.33%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 210px;
+    margin-bottom: 15px;
+}
+.service__item .service__icon {
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.services__section .service__item .service__icon:hover{
+    color: var(--text-color-w); 
+    border: 1px solid var(--dark-primary-color);
+    background: var(--primary-color);
+}
+.service__item .service__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.service__item .service__desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #464646;
+}
+.services__section .service__item.style-2 .service__icon{
+    background: var(--primary-color);
+    color: var(--text-color-w);
+    transition: var(--trans-1);
+    border: 1px solid transparent;
+}
+.services__section .service__item.style-2 .service__icon:hover{
+    color: var(--primary-color); 
+    border: 1px solid var(--primary-color);
+    background: var(--text-color-w);
+}
