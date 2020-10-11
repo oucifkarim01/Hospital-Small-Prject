@@ -27,6 +27,40 @@
     cursor: pointer;
     transition: var(--trans-1);
 }
+.section .section__inner{
+    padding: 25px 0 ;
+}
+.section .section__header {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 30px 0;
+    max-width: fit-content;
+}
+.section .section__header h2 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    padding-bottom: 12px;
+    color: var(--dark-primary-color);
+    position: relative;
+}
+.section .section__header h2::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    height: 5px;
+    background-color: var(--primary-color);
+}
+/* .section .section__body .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+
+
 /*Global Elements end */
 
 body {
@@ -295,37 +329,14 @@ body {
 } 
 
 /* Services Section :   */
-.services__section .section__inner {
-    padding: 25px 0 ;
-}
-.services__section .section__header {
-    margin: 0 auto;
-    margin-bottom: 15px;
-    padding: 30px 0;
-    max-width: fit-content;
-}
-.services__section .section__header h3 {
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    padding-bottom: 12px;
-    color: var(--dark-primary-color);
-    position: relative;
-}
-.services__section .section__header h3::after{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    content: "";
-    height: 5px;
-    background-color: var(--primary-color);
-}
+
+/*maybe glob*/
 .services__section .section__body .inner {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
+} 
 .services__section .service__item {
     min-width: 200px;
     max-width: 33.33%;
@@ -374,4 +385,22 @@ body {
     color: var(--primary-color); 
     border: 1px solid var(--primary-color);
     background: var(--text-color-w);
+}
+
+/*Best Services Section */
+/*maybe glob*/
+.bst_services__section .section__body .inner {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+} 
+.bst_services__section .service_item {
+    max-width: 33%;
+    padding: 25px;
+    margin-bottom: 15px;
+} 
+
+.bst_services__section .service_inner {
+
 }
