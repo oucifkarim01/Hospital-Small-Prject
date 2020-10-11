@@ -24,28 +24,12 @@ body {
 
 /* best Services section */
 
-.bst_services__section .service_item {
-    max-width: calc(33.33%);
+
+
+/* footer section */
+.footer_inner .footer__widget {
+    max-width: 25%;
     min-width: auto;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-} 
-
-/* Carrer Pro Services section */
-
-/* 
-.pro__carrer_section .section__body .inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-} */
-.pro__carrer_section .inner > div {
-    flex: 1;
-    padding: 25px ;
-    box-sizing: border-box;
-    min-width: 300px;
 }
 
 
@@ -82,21 +66,38 @@ body {
 
 /*breakpoint 1025px */
 @media screen and (max-width:1024px){
+    /*Slider section */
     .slider__inner .slider__titles {
         flex: 1; 
+    }
+    /*footer section */
+    .footer_inner .footer__widget{
+        font-size: 0.9rem;
     }
 }
 
 /*breakpoint 962px */
 @media screen and (max-width:962px){
+    /*best services section */
     .bst_services__section .service_item {
         max-width: 50%;
     }
+    /* pro carrer section */
+    .pro__carrer_section .inner > div {
+        min-width: 100%;
+    }
+    /* footer section */
+    .footer_inner .footer__widget{
+        font-size: 0.9rem;
+        min-width: 50%;
+    }
+    
 }
 
 
 /*breakpoint 660px */
 @media screen and (max-width:660px){
+    /*best services section */
     .bst_services__section .service_item {
         max-width: 100%;
     }
