@@ -613,5 +613,44 @@ body {
     transition: var(--trans-1);
 }
 .footer__links .links__list li a:hover {
+    /* background: #464646; */
+    background: var(--dark-primary-color);
+}
+
+.footer__contact .contact__list .item > *{
+    display: inline-block;
+}
+.footer__contact .contact__list .item {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: 10px 0;
+}
+.footer__contact .contact__list .item .icon{ 
+    padding: 8px;
+    font-size: 22px;
+    /* margin-right: 10px; */
+    min-width: 28px;
+    text-align: center;
+    padding-left: 0;
+    color: var(--primary-color);
+}
+.footer_rdv .rdv__form input,
+.footer_rdv .rdv__form input::placeholder,
+.footer_rdv .rdv__form textarea,
+.footer_rdv .rdv__form textarea::placeholder{
+    font-family: "Montserrat";
+}
+.footer_rdv .rdv__form input,
+.footer_rdv .rdv__form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding:8px 10px;
+    box-sizing: border-box;
     background: #464646;
+    border: 2px solid #1f1f1f;
+    color: var(--text-color-wg);
+} 
+.footer_rdv .rdv__form button {
+    width: 100%;
 }
