@@ -393,7 +393,7 @@ body {
 .bst_services__section .section__body .inner {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     flex-wrap: wrap;
 } 
 
@@ -402,6 +402,7 @@ body {
     min-width: 290px;
     padding: 25px;
     box-sizing: border-box;
+    min-height: 350px;
     margin-bottom: 15px;
 } 
 .bst_services__section .service_inner {
@@ -416,6 +417,9 @@ body {
     background: var(--text-color-wg);
     box-shadow: var(--slide-shadow);
     margin-top: 5px;
+}
+.section__inner .service__img img {
+    width: 100%;
 }
 .section__inner .service__text {
     padding: 10px;
