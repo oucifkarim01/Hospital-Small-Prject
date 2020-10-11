@@ -36,6 +36,7 @@
     margin-bottom: 15px;
     padding: 30px 0;
     max-width: fit-content;
+    text-transform: capitalize;
 }
 .section .section__header h2 {
     text-transform: uppercase;
@@ -389,20 +390,19 @@ body {
 }
 
 /*Best Services Section */
-/*maybe glob*/
+/*maybe glob*//*resp todo*/
 .bst_services__section .section__body .inner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 } 
 
 .bst_services__section .service_item {
     max-width: calc(33.33%);
     min-width: 290px;
-    padding: 25px;
+    padding: 15px;
     box-sizing: border-box;
-    min-height: 350px;
     margin-bottom: 15px;
 } 
 .bst_services__section .service_inner {
@@ -412,6 +412,7 @@ body {
     box-shadow: var(--service-card-shadow);
     transition: var(--trans-1);
     margin-top: 15px;
+    min-height: 350px;
 }
 .bst_services__section .service_inner:hover {
     background: var(--text-color-wg);
@@ -435,3 +436,54 @@ body {
     font-weight: 300;
     color: #1f1f1f;
 }
+/*services style 2 */
+.bst_services__section.style-2 .service_inner {
+    position: relative;
+    background: transparent;
+    display: flex;
+    min-height: 270px;
+    margin-top: 0;
+}
+.bst_services__section.style-2 .service_inner:hover{
+    margin-top: 0;
+}
+.bst_services__section.style-2 .service_inner .service__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.bst_services__section.style-2 .service_inner .service__img img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.bst_services__section.style-2 .service_inner .service__text {
+    z-index: 10;
+    background: #ff6883b5;
+    padding: 40px 30px;
+    transition: .2s all ease-in-out;
+}
+.bst_services__section.style-2 .service_inner .service__text .service__title h3 {
+    font-size: 1.5rem;
+    color: var(--text-color-w);
+    margin: 15px 0;
+}
+.bst_services__section.style-2 .service_inner .service__text .service__summary p {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+.bst_services__section.style-2 .service_inner .service__text:hover {
+    background: var(--primary-color);
+
+}
+
+/*Carrer Pro SEction */
+.pro__carrer_section .section__body .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
