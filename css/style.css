@@ -315,7 +315,7 @@ body {
     margin-bottom: 7px;
 }
 .about__center .section__text .desc p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     color: #272727;
@@ -365,6 +365,7 @@ body {
     height: 70px;
     width: 70px;
     line-height: 70px;
+    transition: var(--trans-1);
 }
 .services__section .service__item .service__icon:hover{
     color: var(--text-color-w); 
