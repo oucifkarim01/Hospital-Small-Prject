@@ -465,11 +465,15 @@ body {
     background: #ff6883b5;
     padding: 40px 30px;
     transition: .2s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .bst_services__section.style-2 .service_inner .service__text .service__title h3 {
     font-size: 1.5rem;
     color: var(--text-color-w);
     margin: 15px 0;
+    margin-bottom: 30px;
 }
 .bst_services__section.style-2 .service_inner .service__text .service__summary p {
     color: #ffffff;
@@ -486,4 +490,4 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-} 
+}
