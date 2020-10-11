@@ -333,17 +333,19 @@ body {
     box-sizing: border-box;
     text-align: center;
     min-height: 210px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .service__item .service__icon {
     display: inline-block;
-    font-size: 30px;
-    padding: 15px;
+    font-size: 28px;
     margin-bottom: 10px;
     border-radius: 50%;
     cursor: pointer;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
 }
 .services__section .service__item .service__icon:hover{
     color: var(--text-color-w); 
