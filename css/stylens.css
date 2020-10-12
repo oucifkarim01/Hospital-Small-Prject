@@ -348,10 +348,11 @@ body {
 .about__us .section__body .inner > *  {
     flex: 1;
 }
-
+/* todo resp */
 .about__us .section__body .inner > .contact_info  {
     flex: 0.3;
     min-width: 290px;
+    margin-top: 30px;
 } 
 
 /*about__content*/
@@ -416,7 +417,7 @@ body {
     align-items: center;
 }
 .about__slider .active__image  {
-    height: 360px;
+    height: 300px;
     transition: opacity 0.3s ease-in;
     opacity: 1;
 }
@@ -436,7 +437,6 @@ body {
     text-align: center;
 }
 .about__slider .image__selecter .image__item {
-    /* display: inline-block; */
     box-sizing: border-box;
     width: 20%;
     float: left;
@@ -478,9 +478,21 @@ body {
     height: 100%;
     width: 100%;
 }
+/*About us text content*/
+.about__content .about___texts .inner{
+    padding: 0 25px;
+}
 
-
-
+.about___texts p{
+    line-height: 1.4;
+    color: #464646;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.about___texts h3{
+    color: var(--primary-color);
+    line-height: 2;
+}
 
 /* Services Section :   */
 
