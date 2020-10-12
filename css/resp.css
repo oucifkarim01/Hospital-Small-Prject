@@ -73,11 +73,24 @@ body {
     }
     /* Services Section */
     .services__section .section__body .inner{
-        justify-content: space-between;
+        justify-content: center;
     }
+    .services__section .service__item {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        border: 1px solid rgb(0 0 0 / 12%);
+        margin-bottom: 20px;
+    }
+
+    
     /* Best Services Section*/
     .bst_services__section .service_inner {
         min-height: 260px;
+    }
+    .bst_services__section .service_item {
+        min-width: auto;
     }
 }
 

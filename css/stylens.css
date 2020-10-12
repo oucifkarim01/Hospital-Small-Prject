@@ -559,12 +559,33 @@ body {
 
 /* Our Service Adaptation  */
 .services__section .service__item {
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    user-select: none;
+    
+}
+.services__section .service__icon {
+    flex: 0 0 60px;
+    height: 60px;
+    margin-right: 21px;
+    line-height: 60px;
+}
+.services__section .service__item  .service__text {
     text-align: left;
+    max-width: 330px;
 }
-.services__section .service__item .service__icon {
-    text-align: center;
+.services__section .service__item  .service__text .service__title {
+    margin-bottom: 10px;
 }
-
+.services__section .service__item {
+    transition: var(--trans-1);
+    cursor: pointer;
+}
+ .services__section .service__item:hover {
+    box-shadow: var(--service-card-shadow);
+}
 
 
 
