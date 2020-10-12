@@ -40,7 +40,7 @@
 }
 .section .section__header h2 {
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding-bottom: 12px;
     color: var(--dark-primary-color);
     position: relative;
@@ -300,7 +300,6 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* padding: 25px; */
 }
 .about__center > * {
     flex: 1;
@@ -393,6 +392,10 @@ body {
     padding: 10px;
     border-bottom: 1px solid #46464621;
     font-size: 16px;
+    transition: var(--trans-1);
+}
+.aboutus__contact .contact__list .item:hover{
+    color: var(--dark-primary-color);
 }
 .aboutus__contact .contact__list .item .icon{ 
     padding: 8px;
