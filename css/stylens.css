@@ -557,6 +557,17 @@ body {
     background: var(--text-color-w);
 }
 
+/* Our Service Adaptation  */
+.services__section .service__item {
+    text-align: left;
+}
+.services__section .service__item .service__icon {
+    text-align: center;
+}
+
+
+
+
 /*Best Services Section */
 /*maybe glob*//*resp todo*/
 .bst_services__section .section__body .inner {

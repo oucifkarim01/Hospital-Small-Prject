@@ -65,6 +65,9 @@ body {
     .about__us .about__slider .inner {
         padding: 0;
     }
+    .about__slider .image__selecter .image_link {
+        height: auto;
+    }
     .about__us .about___texts .inner {
         padding: 10px 0;
     }
