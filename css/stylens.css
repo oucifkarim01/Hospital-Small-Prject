@@ -360,6 +360,7 @@ body {
 .box {
     width: 100%;
     border: 1px solid #46464621;
+    margin-bottom: 20px;
 }
 .box .title h3{
     padding: 10px;
@@ -376,10 +377,32 @@ body {
 
 
 
-.about__content .contact_info {
+.aboutus__contact .contact_info {
     box-sizing: border-box;
     padding:10px;
 }
+
+.aboutus__contact .contact__list .item > *{
+    display: inline-block;
+}
+.aboutus__contact .contact__list .item {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: 10px;
+    border-bottom: 1px solid #46464621;
+    font-size: 16px;
+}
+.aboutus__contact .contact__list .item .icon{ 
+    padding: 8px;
+    font-size: 18px;
+    /* margin-right: 10px; */
+    min-width: 28px;
+    text-align: center;
+    padding-left: 0;
+    color: var(--primary-color);
+}
+
 
 
 
