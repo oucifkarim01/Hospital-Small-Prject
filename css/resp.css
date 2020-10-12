@@ -29,6 +29,19 @@ body {
 
 /* best Services section */
 
+/* Best Service Apadtation */
+/* .bst_services__section .section__body .inner {
+
+    margin: 0px 20px;
+}
+
+.bst_services__section .service_item {
+    max-width: calc(30%);
+    flex: 1;
+    margin: 0px 20px;
+} */
+
+
 
 
 /* footer section */
@@ -86,12 +99,12 @@ body {
 
     
     /* Best Services Section*/
-    .bst_services__section .service_inner {
+    /* .bst_services__section .service_inner {
         min-height: 260px;
     }
     .bst_services__section .service_item {
         min-width: auto;
-    }
+    } */
 }
 
 
@@ -128,9 +141,9 @@ body {
     }
     
     /*best services section */
-    .bst_services__section .service_item {
+    /* .bst_services__section .service_item {
         max-width: 50%;
-    }
+    } */
     /* pro carrer section */
     .pro__carrer_section .inner > div {
         min-width: 100%;
