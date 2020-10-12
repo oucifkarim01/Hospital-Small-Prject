@@ -42,6 +42,8 @@ body {
 } */
 
 
+/*Parallex section*/
+
 
 
 /* footer section */
@@ -50,6 +52,18 @@ body {
     min-width: auto;
 }
 
+
+
+
+/*breakpoint 512px */
+@media screen and (max-width:511px){
+    /* Parallex Section */
+    .parallex_section {
+        min-height: 260px;
+        padding: 40px 10px;
+    }
+
+}
 
 
 
@@ -96,7 +110,6 @@ body {
         border: 1px solid rgb(0 0 0 / 12%);
         margin-bottom: 20px;
     }
-
     
     /* Best Services Section*/
     /* .bst_services__section .service_inner {
@@ -144,6 +157,11 @@ body {
     /* .bst_services__section .service_item {
         max-width: 50%;
     } */
+
+    /* Parallex Section */
+    .parallex_section {
+        min-height: 320px;
+    }
     /* pro carrer section */
     .pro__carrer_section .inner > div {
         min-width: 100%;

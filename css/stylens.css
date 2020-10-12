@@ -687,6 +687,40 @@ body {
 
 
 
+
+
+
+
+/* parallex section */ 
+.parallex_section_outer {
+    background-image:  linear-gradient(to right, #bb2c47e3 , #3e010c73) , url("../images/dr.png") ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallex_section {
+    min-height: 410px;
+    padding: 80px 0 ;
+    box-sizing: border-box;
+    text-align: center;
+}
+.parallex_section > * {
+    /* max-width: fit-content; */
+    text-align: center;
+}
+.parallex_section p {
+    color: var(--text-color-wg);
+    font-size: 20px;
+    max-width: 450px;
+    margin: 20px auto;
+}
+.parallex_section .parallex__button {
+    margin-top: 30px;
+}
+
+
+
 /*Carrer Pro SEction */
 .pro__carrer_section .section__body .inner {
     display: flex;
