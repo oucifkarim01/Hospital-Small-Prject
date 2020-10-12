@@ -417,6 +417,12 @@ body {
 }
 .about__slider .active__image  {
     height: 360px;
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+}
+.about__slider .active__image.trans  {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
 }
 .about__slider .active__image img {
     object-fit: cover;
