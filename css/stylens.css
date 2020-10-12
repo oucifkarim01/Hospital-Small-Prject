@@ -356,8 +356,30 @@ body {
 
 /*about__content*/
 /* about us contact sub section */
+/*global may be*/
+.box {
+    width: 100%;
+    border: 1px solid #46464621;
+}
+.box .title h3{
+    padding: 10px;
+    background: var(--dark-primary-color);
+    font-weight: 300;
+    color: var(--text-color-w);
+}
+.box .list li {
+    padding: 10px ;
+    font-weight: 400;
+    color: #272727;
+    border-bottom: 1px solid #46464621;
+}
 
 
+
+.about__content .contact_info {
+    box-sizing: border-box;
+    padding:10px;
+}
 
 
 
@@ -427,7 +449,6 @@ body {
     height: 100%;
     width: 100%;
 }
-
 
 
 
