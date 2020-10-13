@@ -144,6 +144,35 @@ body {
 
 /*breakpoint 962px */
 @media screen and (max-width:962px){
+    /* Main Navigation */
+    .header_bar .navigation {
+        padding-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--dark-primary-color);
+        z-index: 100;
+        overflow-x:auto;
+    }
+    .navigation .primary-menu{
+        display: block;
+    }
+    .navigation .primary-menu .menu-item .menu-drop {
+        position: relative;
+        z-index: auto;
+        opacity: 1;
+        top: 0;
+        display: none;
+    }
+    .navigation .primary-menu .menu-item.show-drop .menu-drop {
+        display: block;
+    }
+    .navigation .menu-drop .mega_menu_list {
+        display: block;
+    }
     /* about us section */
     .about__us .section__body > .inner > * {
         min-width: 100%;

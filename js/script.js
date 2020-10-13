@@ -20,22 +20,11 @@ function initAboutUsImageSlider(){
 }
 
 
-// function initMegaMenu(){
-//     let mega_menu_holder = document.getElementById("mega_menu_holder");
-//     let mega_sub_parents = document.querySelectorAll(".header_bar .primary-menu .menu-item.drop-down");
-//     mega_sub_parents.forEach((sub_menu)=>{
-//         sub_menu.addEventListener("mouseenter",(e)=>{
-//             mega_menu_holder.innerText = "";
-//             sub_menu.querySelector(".menu-drop").childNodes.forEach((node)=>{
-//                 mega_menu_holder.appendChild(node.cloneNode(true));
-//             })
-//             mega_menu_holder.classList.add("shown");
-//         })
-//         sub_menu.addEventListener("mouseleave",(e)=>{
-//             console.log(e.target)
-//             if(e.target.id !== "mega_menu_holder"){
-//                 mega_menu_holder.classList.remove("shown");
-//             }
-//         })
-//     })
-// }
+function initMegaMenu(){
+    let dropDownLinks = document.querySelectorAll(".navigation .primary-menu .menu-item.drop-down");
+    dropDownLinks.forEach((link)=>{
+        link.addEventListener("click",(ev)=>{
+            link.classList.toggle("show-drop");
+        })
+    })
+}
