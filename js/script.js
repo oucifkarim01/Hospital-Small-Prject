@@ -1,5 +1,5 @@
 initAboutUsImageSlider();
-
+initMegaMenu();
 
 
 function initAboutUsImageSlider(){
@@ -17,4 +17,21 @@ function initAboutUsImageSlider(){
             },200)
         }
     });
+}
+
+
+function initMegaMenu(){
+    let mega_menu_holder = document.getElementById("mega_menu_holder");
+    let mega_sub_parents = document.querySelectorAll(".header_bar .primary-menu .menu-item.drop-down");
+    mega_sub_parents.forEach((sub_menu)=>{
+        sub_menu.addEventListener("mouseenter",(e)=>{
+            sub_menu.querySelector(".menu-drop").childNodes.forEach((node)=>{
+                mega_menu_holder.appendChild(node.cloneNode(true));
+            })
+            mega_menu_holder.classList.add("shown");
+        })
+        sub_menu.addEventListener("mouseleave",(e)=>{
+            
+        })
+    })
 }
