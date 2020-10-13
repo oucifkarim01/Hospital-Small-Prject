@@ -219,15 +219,22 @@ body {
 .navigation .mega_menu_holder {
     background: var(--primary-color);
     box-sizing: border-box;
-    padding: 15px ;
+    /* padding: 15px ; */
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
     transition: var(--trans-1);
     display: flex;
     align-items: center;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    transition: .15s opacity ease-in-out;
 }
+.navigation .mega_menu_holder.shown {
+    opacity: 1;
+    padding: 15px;
+}
+
 .navigation .mega_menu_holder .mega_menu_image {
     height: 200px;
     /* width: 350px; */
