@@ -769,10 +769,11 @@ body {
 .section__inner .service__img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .section__inner .service__text {
     padding: 10px;
-    min-height: 147px!important;
+    min-height: 147px;
 }
 .section__inner .service__title h3 {
     margin-bottom: 5px;

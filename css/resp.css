@@ -132,7 +132,7 @@ body {
     }
     .bst_services__section .service_item {
         width: 90%!important;
-        max-width: 100%!important;
+        /* max-width: 100%!important; */
         float: none!important;
     } 
     .bst_services__section .service_item .service_inner {
@@ -317,5 +317,15 @@ body {
     .aboutus__contact .contact__list .item{
         font-size: 12px;
         padding: 4px;
+    }
+    /*Best Services Section */
+    .section__inner .service__img{
+        height: 130px;
+    }
+    .section__inner .service__text {
+        min-height: auto;
+    }
+    .section__inner .service__text p {
+        font-size: 12px;
     }
 }
