@@ -3,6 +3,28 @@ body {
     --min-width-half: 380px;;
     --min-width-third: 250px;
 }
+
+
+/* Header */
+
+@media (max-width:1086px){
+    .header__widgets > * {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .info__item .icon i {
+        font-size: 32px;
+    }        
+    .info__item .text {
+        font-size: 13px;
+    }
+    button.make_appoint.button {
+        padding: 10px;
+    }
+}
+
+
+
 /* slider section */
 
 .slider__inner > * {
@@ -222,15 +244,22 @@ body {
 
 
     /* about us section */
-    .about__us .section__body > .inner > * {
+    .about__us .section__body > .inner {
         min-width: 100%;
+        display: block;
     }    
     .about__us .section__body .inner > .contact_info {
         flex: auto;
     }
+    .about__us .section__body .inner > .contact_info {
+        min-width: auto;
+    }
     .about__us  .contact_info .box {
         display: inline-block;
-        margin: 20px;
+        margin: 0px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        min-width: auto;
     }
     .about__us  .contact_info .aboutus__services.box {
         max-width: 35%;
@@ -276,3 +305,16 @@ body {
     }
 }
 /*todo -500px*/
+
+/*breakpoint 962px */
+@media screen and (max-width:500px){
+    /*Global */
+    .container {
+        padding:0 10px!important;
+    }
+    /* About Us Section */
+    .aboutus__contact .contact__list .item{
+        font-size: 12px;
+        padding: 4px;
+    }
+}
