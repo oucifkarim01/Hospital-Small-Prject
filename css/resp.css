@@ -310,7 +310,8 @@ body {
 @media screen and (max-width:500px){
     /*Global */
     .container {
-        padding:0 10px!important;
+        padding-right: 10px!important;
+        padding-left: 10px!important;
     }
     /* About Us Section */
     .aboutus__contact .contact__list .item{
