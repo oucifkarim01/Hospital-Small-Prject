@@ -306,12 +306,31 @@ body {
 }
 /*todo -500px*/
 
-/*breakpoint 962px */
+/*breakpoint 500px */
 @media screen and (max-width:500px){
     /*Global */
     .container {
         padding-right: 10px!important;
         padding-left: 10px!important;
+    }
+    /*Header Section*/
+    .header_bar.container{
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+    }
+    .header_bar .header__widgets label {
+        font-size: 18px;
+    }
+    .header_bar .branding > *{
+        margin-top: 0;
+    }
+    .header__widgets{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .header_bar .branding .make_appoint.button{
+        font-size: 10px;
+        padding: 5px;
     }
     /* About Us Section */
     .aboutus__contact .contact__list .item{
@@ -327,5 +346,18 @@ body {
     }
     .section__inner .service__text p {
         font-size: 12px;
+    }
+    /*Pro Carrer Section*/
+    .pro__carrer_section .inner > div {
+        padding: 5px;
+    }
+    .pro__carrer_section .carrer__option {
+        display: block;
+    }
+    .pro__carrer_section .carrer__option .icon {
+        margin-bottom: 20px;
+    }
+    .pro__carrer_section .carrer__text{
+        margin-left: 5px;
     }
 }
