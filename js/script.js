@@ -21,10 +21,15 @@ function initAboutUsImageSlider(){
 
 
 function initMegaMenu(){
+    let navigationHolder = document.querySelector(".header_bar  .navigation");
     let dropDownLinks = document.querySelectorAll(".navigation .primary-menu .menu-item.drop-down");
     dropDownLinks.forEach((link)=>{
         link.addEventListener("click",(ev)=>{
             link.classList.toggle("show-drop");
         })
+    })
+    let hamb_btn = document.querySelector("#hamb_btn");
+    hamb_btn.addEventListener("click",(btn)=>{
+        navigationHolder.classList.toggle("show");
     })
 }
