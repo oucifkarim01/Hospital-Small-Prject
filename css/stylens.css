@@ -84,6 +84,26 @@ body {
 .page {
     width: 100%;
 }
+
+
+/*Header */
+.top_nav_outer {
+    background-color: #272727;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,1);
+    box-shadow: 0 1px 5px #00000029;
+}
+.top_nav .working__time {
+    color: var(--text-color);
+    font-size: 14px;
+}
+.top_nav .working__time > * {
+    display: inline-block;
+}
+.top_nav .working__time .icon {
+    margin-right: 10px;
+}
+
 .header_bar {
     margin: 0 auto;
     display: flex;
