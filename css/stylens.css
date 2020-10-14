@@ -98,7 +98,7 @@ body {
     font-size: 14px;
 }
 .top_nav .working__time > * {
-    display: inline-block;
+    display: inline;
 }
 .top_nav .working__time .icon {
     margin-right: 10px;
