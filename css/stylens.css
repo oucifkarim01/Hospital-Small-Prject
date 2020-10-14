@@ -39,23 +39,32 @@
     text-transform: capitalize;
 }
 .section .section__header h2 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 1.5rem;
     padding-bottom: 12px;
-    color: var(--dark-primary-color);
+    color: var(--primary-color);
     position: relative;
 }
-.section .section__header h2::after{
+.section .section__header h2::after,
+.section .section__header h2::before{
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     content: "";
-    height: 5px;
+    height: 1.5px;
     background-color: var(--primary-color);
+    max-width: 100%;
 }
 
-
+.section .section__header h2::after {
+    width: 125px;
+    margin: 2px auto;
+}
+.section .section__header h2::before{
+    width: 75px;
+    margin: -4px auto;
+}
 /*Global Elements end */
 
 body {
