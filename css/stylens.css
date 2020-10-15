@@ -396,7 +396,9 @@ body {
 #radio3:checked ~ .first{
     margin-left: -40%;
 }
-
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
 /*Auto Navigat*/
 .slide_show .navigation_auto {
     position: absolute;
@@ -430,7 +432,9 @@ body {
 }
 
 
-
+#radio4:checked ~ .navigation_auto .auto_btn4{
+    background: var(--primary-color);
+}
 
 
 
