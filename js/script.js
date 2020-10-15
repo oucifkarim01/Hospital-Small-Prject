@@ -1,6 +1,6 @@
 initAboutUsImageSlider();
 initMegaMenu();
-
+slideShowInit();
 
 function initAboutUsImageSlider(){
     let active_image = document.querySelector("#active__image img");
@@ -32,4 +32,14 @@ function initMegaMenu(){
     hamb_btn.addEventListener("click",(btn)=>{
         navigationHolder.classList.toggle("show");
     })
+}
+
+function slideShowInit(){
+    let counter = 2;
+    document.getElementById("radio1").checked = true;
+    setInterval(()=>{
+        let radio = document.getElementById("radio"+counter);
+        radio.checked = true;
+        counter = (counter + 1) % 3;
+    },5000)
 }
