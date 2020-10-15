@@ -35,10 +35,11 @@ function initMegaMenu(){
 }
 
 function slideShowInit(){
-    let counter = 2;
+    let counter = 1;
     document.getElementById("radio1").checked = true;
     setInterval(()=>{
-        let radio = document.getElementById("radio"+counter);
+        let radio = document.getElementById(`radio${counter+1}`);
+        console.log(radio);
         radio.checked = true;
         counter = (counter + 1) % 3;
     },5000)
