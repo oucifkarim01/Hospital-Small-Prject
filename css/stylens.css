@@ -1159,6 +1159,7 @@ body {
     border: 1px solid var(--text-color);
     box-shadow: 2px 2px 10px 0px #ececec;
 }
+
 .contact_section .section__body .contact_form {
     flex: 0 0 60%;
 }
@@ -1238,7 +1239,7 @@ body {
     /* padding: 8px 5px 8px 5px; */
     line-height: 24px;
     text-align: center;
-    font-size: 20px;
+    font-size: 26px;
     color: #000000c4;
     transition: var(--trans-1);
     margin: 5px;
@@ -1260,4 +1261,38 @@ body {
 .main__content.page .contact_banner .section__header {
     font-size: 36px;
     color: var(--text-color-w);
+}
+
+/*Contact style 2*/
+
+.contact_section.contact_section_2 .section__body > * {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.contact_section_2 .contact_form .rdv__form input,.contact_section_2 .contact_form .rdv__form textarea{
+margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* background: #ffffff; */
+    background: whitesmoke;
+    border: 2px solid #d6d6d657;
+    color: #1f1f1f;
+    transition: var(--trans-1);
+}
+.contact_section_2 .contact_form .rdv__form input:focus,
+.contact_section_2 .contact_form .rdv__form textarea:focus{
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+.contact_section_2 .contact_form .rdv__form button {
+    width: 100%;
+    padding: 17px 0;
+    font-size: 16px;
+}
+.contact_section_2 .contact_options .text h3 {
+    padding: 15px 0px;
+}
+.map_section_outer iframe{
+    width: 100%;
 }
