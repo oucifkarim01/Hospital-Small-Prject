@@ -1,6 +1,10 @@
-initAboutUsImageSlider();
+if(!page_name){
+    initAboutUsImageSlider();
+    slideShowInit();
+}
 initMegaMenu();
-slideShowInit();
+
+
 
 function initAboutUsImageSlider(){
     let active_image = document.querySelector("#active__image img");
