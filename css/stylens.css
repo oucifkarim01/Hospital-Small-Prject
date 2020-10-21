@@ -1305,7 +1305,15 @@ margin-bottom: 10px;
     position: relative;
     margin-bottom: 0px;
 }
-
+.service_page.service_page_2 .service_header {
+    --section-height:350px;
+    background-image:  linear-gradient(to right, #bb2c47e3 , #3e010c73) , var(--background);
+    margin: 15px 0;
+    height: var(--section-height);
+    position: relative;
+    margin-bottom: 0px;
+    background-position: center;
+}
 .service_infos_card_holder {
     position: absolute;
     padding: 10px;
@@ -1313,7 +1321,12 @@ margin-bottom: 10px;
     max-width: 600px;
     box-sizing: border-box;
     top: 28%;
+    z-index: 100;
 }
+.service_page.service_page_2 .service_infos_card_holder {
+    top: 50%;
+}
+
 .service_page .service_infos_card {
     background-color: #FFFFFF;
     width: 100%;
@@ -1362,11 +1375,30 @@ margin-bottom: 10px;
 .service_main_inner {
     overflow: hidden;
     background-color: #EBF5F5;
+}
+.service_page_2 .service_main_inner {
     --top-spacing:60px;
+}
+.service_page .service_main_inner {
+    --top-spacing:0px;
 }
 .service_main_inner > * {
     padding-top: var(--top-spacing)!important;
 }
+
+.service_main_inner .service_feature {
+    position: relative;
+}
+.service_main_inner .service_feature::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background:  linear-gradient(to right, #bb2c47e3 , #3e010c73);
+    content: "";
+}
+
 .service_main_inner .service_content {
     width: 70%;
     float: left;
@@ -1429,14 +1461,37 @@ margin-bottom: 10px;
 }
 .service_sidebar .widget .widgt_title {
     padding: 5px 0;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     text-transform: capitalize;
     font-weight: 600;
     color: var(--dark-primary-color);
+    position: relative;
+    margin-bottom: 25px;
 }
+.service_sidebar .widget .widgt_title::after,
+.service_sidebar .widget .widgt_title::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    height: 1.5px;
+    background-color: var(--primary-color);
+    max-width: 100%;
+}
+
+.service_sidebar .widget .widgt_title::after {
+    width: 125px;
+    margin: 2px auto;
+}
+.service_sidebar .widget .widgt_title::before{
+    width: 75px;
+    margin: -4px auto;
+}
+
 .service_sidebar .widget .widget_inner {
-    margin-top: 10px;
+    margin-top: 20px;
     background: var(--text-color-w);
     box-shadow: 2px 2px 8px #00000014;
 }
