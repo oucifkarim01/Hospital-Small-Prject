@@ -1073,6 +1073,7 @@ body {
     padding: 15px;
     min-width: 225px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .footer_inner .footer__widget:first-child {
     padding-left: 0;
@@ -1327,7 +1328,8 @@ margin-bottom: 10px;
     z-index: 100;
 }
 .service_page.service_page_2 .service_infos_card_holder {
-    top: 50%;
+    top: 190px;
+
 }
 
 .service_page .service_infos_card {
@@ -1379,11 +1381,9 @@ margin-bottom: 10px;
     overflow: hidden;
     background-color: #EBF5F5;
 }
-.service_page_2 .service_main_inner {
-    --top-spacing:60px;
-}
+
 .service_page .service_main_inner {
-    --top-spacing:0px;
+    --top-spacing:60px;
 }
 .service_main_inner > * {
     padding-top: var(--top-spacing)!important;
@@ -1409,6 +1409,10 @@ margin-bottom: 10px;
     box-shadow: 2px 0 6px #0000001a;
     box-sizing: border-box;
     padding-bottom:40px ;
+    padding-top: 0!important;
+}
+.service_page.service_page_2 .service_main_inner .service_content {
+    padding-top: var(--top-spacing)!important;
 }
 .service_main_inner .service_sidebar {
     width: 30%;

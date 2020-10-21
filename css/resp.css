@@ -42,9 +42,7 @@ body {
 }
 
 /*  About us section */
-.about__us .section__body > .inner {
 
-}
 
 /* Services Section */
 
@@ -139,6 +137,27 @@ body {
         min-height: auto;
     }
 
+    /* contact page */
+    .contact_section .section__body {
+        display: block;
+    }
+
+    /*service page */
+    .caption_picture {
+        display: block;
+    }
+    .caption_picture > * {
+        display: block;
+    }
+    .caption_picture > img {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 200px;
+        object-fit: contain;
+    }
+    .service_infos_card_holder {
+        left: 0;
+    }
 }
 
 
@@ -286,6 +305,20 @@ body {
         font-size: 0.9rem;
         min-width: 50%;
     }
+
+    /* contact page */
+    .contact_section .section__body > * {
+        margin: 0px;
+    }
+    /*service page */
+    .service_main_inner .service_content {
+        width: 100%;
+        float: none;
+    }
+    .service_main_inner .service_sidebar {
+        width: 100%;
+        float: none;
+    }
     
 }
 
@@ -359,5 +392,18 @@ body {
     }
     .pro__carrer_section .carrer__text{
         margin-left: 5px;
+    }
+
+    /* footer section */
+    .footer__contact .contact__list .item > * {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:450px){
+    .footer_inner {
+        display: block;
+    }
+    .footer_inner .footer__widget {
+        max-width: 100%;
     }
 }
