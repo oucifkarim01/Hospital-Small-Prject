@@ -1230,10 +1230,12 @@ body {
     font-weight: 500;
 }
 /*socials of contact page*/
-.contact_section .social__media {
+.contact_section .social__media ,
+.contact_socials .social__media{
     margin-top: 15px;
 }
-.contact_section .social__media a {
+.contact_section .social__media a ,
+.contact_socials .social__media a{
     height: 24px;
     width: 24px;
     /* padding: 8px 5px 8px 5px; */
@@ -1244,7 +1246,8 @@ body {
     transition: var(--trans-1);
     margin: 5px;
 }
-.contact_section .social__media a:hover {
+.contact_section .social__media a:hover,
+.contact_socials .social__media a:hover {
     color: var(--dark-primary-color);
 }
 
@@ -1405,6 +1408,7 @@ margin-bottom: 10px;
     background: var(--text-color-w);
     box-shadow: 2px 0 6px #0000001a;
     box-sizing: border-box;
+    padding-bottom:40px ;
 }
 .service_main_inner .service_sidebar {
     width: 30%;
@@ -1507,4 +1511,9 @@ margin-bottom: 10px;
 .service_sidebar .widget .widget_inner li a:hover {
     color: var(--primary-color);
     background: #fbfbfb;
+}
+.service_main_inner .contact_socials {
+    padding: 25px;
+    padding-bottom: 0;
+    border-top: 2px solid rgb(0 0 0 / 5%);
 }
