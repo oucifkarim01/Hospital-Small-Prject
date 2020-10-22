@@ -1,4 +1,4 @@
-if(!page_name){
+if(page_name=="home"){
     initAboutUsImageSlider();
     slideShowInit();
 }
