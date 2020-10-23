@@ -331,6 +331,14 @@ body {
 }
 
 /* Simple Drop Menu Style Adapter */
+.navigation .primary-menu .menu-item.drop_menu_style  {
+    position: relative;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .menu-drop ul {
+    text-align: left;
+    display: block;
+    width: 100%;
+}
 
 /*End Header*/
 
