@@ -1051,13 +1051,13 @@ body {
     color: #272727;
 }
 .pro__carrer_section .carrer__items li::before{
-    content: "";
+    content: "\f0a4";
     display: inline-block;
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    border:2px solid var(--dark-primary-color);
+    /* height: 8px;
+    width: 8px; */
     margin-right: 10px;
+    font-family: 'FontAwesome';
+    color: var(--dark-primary-color);
 }
 
 /* pics section */
