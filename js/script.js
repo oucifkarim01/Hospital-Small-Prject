@@ -26,12 +26,25 @@ function initAboutUsImageSlider(){
 
 function initMegaMenu(){
     let navigationHolder = document.querySelector(".header_bar  .navigation");
-    let dropDownLinks = document.querySelectorAll(".navigation .primary-menu .menu-item.drop-down");
+    let dropDownLinks = document.querySelectorAll(".navigation .primary-menu .menu-item.drop-down > a");
+
     dropDownLinks.forEach((link)=>{
         link.addEventListener("click",(ev)=>{
-            link.classList.toggle("show-drop");
+            link.parentElement.classList.toggle("show-drop");
         })
     })
+
+
+    let subDropDownLinks = document.querySelectorAll(".navigation .primary-menu .menu-item.drop-down .sub_drop_menu > a");
+
+    subDropDownLinks.forEach((link)=>{
+        link.addEventListener("click",(ev)=>{
+            link.parentElement.classList.toggle("show-drop");
+        })
+    })
+
+    
+
     let hamb_btn = document.querySelector("#hamb_btn");
     hamb_btn.addEventListener("click",(btn)=>{
         navigationHolder.classList.toggle("show");
@@ -43,7 +56,6 @@ function slideShowInit(){
     document.getElementById("radio1").checked = true;
     setInterval(()=>{
         let radio = document.getElementById(`radio${counter+1}`);
-        console.log(radio);
         radio.checked = true;
         counter = (counter + 1) % 4;
     },5000)

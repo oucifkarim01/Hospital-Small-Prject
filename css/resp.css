@@ -263,7 +263,17 @@
     .navigation .menu-drop .mega_menu_list {
         display: block;
     }
-
+    .navigation .primary-menu .menu-item.show-drop .menu-drop {
+        display: block;
+    }
+    .navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu ul {
+        display: none;
+        position: relative;
+        left: 0;
+    }
+    .navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu.show-drop ul {
+        display: block;
+    }
 
     /* about us section */
     .about__us .section__body > .inner {
