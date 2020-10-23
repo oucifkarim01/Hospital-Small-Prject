@@ -1327,11 +1327,13 @@ margin-bottom: 10px;
     background-image: var(--background);
     margin: 15px 0;
     height: var(--section-height);
+    background-size: 100% 100%;
     position: relative;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-repeat: no-repeat;
 }
 .service_page .service_header > .container {
     margin: 0;
@@ -1566,4 +1568,17 @@ margin-bottom: 10px;
     padding: 25px;
     padding-bottom: 0;
     border-top: 2px solid rgb(0 0 0 / 5%);
+}
+/* service page best services part */
+.service_page .bst_services__section_outer .inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+
+}   
+.bst_services__section .service_item {
+    width: auto;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
 }

@@ -177,6 +177,13 @@
     .footer_inner .footer__widget{
         font-size: 0.9rem;
     }
+    /* service page best service */
+    .service_page .bst_services__section_outer .inner{
+        display: block;
+    }
+    .bst_services__section .service_item{
+        float: none;
+    }
 }
 
 /*breakpoint 962px */
