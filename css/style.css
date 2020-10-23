@@ -297,6 +297,8 @@ body {
     align-items: center;
     opacity: 0;
     z-index: -1;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .menu-drop{
     min-width: max-content;
 }
 
