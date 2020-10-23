@@ -1309,6 +1309,11 @@ margin-bottom: 10px;
     width: 100%;
 }
 /*Services page content */
+
+.service_page {
+    background-color: #EBF5F5;
+    overflow: hidden;
+}
 .service_page .service_header {
     --section-height:300px;
     background-image: var(--background);
@@ -1316,6 +1321,12 @@ margin-bottom: 10px;
     height: var(--section-height);
     position: relative;
     margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.service_page .service_header > .container {
+    margin: 0;
 }
 .service_page.service_page_2 .service_header {
     --section-height:350px;
@@ -1327,17 +1338,16 @@ margin-bottom: 10px;
     background-position: center;
 }
 .service_infos_card_holder {
-    position: absolute;
+    /* position: absolute; */
     padding: 10px;
     height: 250px;
     max-width: 600px;
     box-sizing: border-box;
-    top: 28%;
+    /* top: 28%; */
     z-index: 100;
 }
 .service_page.service_page_2 .service_infos_card_holder {
     top: 190px;
-
 }
 
 .service_page .service_infos_card {
@@ -1385,16 +1395,12 @@ margin-bottom: 10px;
 }
 
 /*service main content*/
+
+
 .service_main_inner {
     overflow: hidden;
-    background-color: #EBF5F5;
-}
-
-.service_page .service_main_inner {
-    --top-spacing:60px;
-}
-.service_main_inner > * {
-    padding-top: var(--top-spacing)!important;
+    /* background-color: #EBF5F5; */
+    /* margin: 30px 0; */
 }
 
 .service_main_inner .service_feature {
@@ -1411,16 +1417,16 @@ margin-bottom: 10px;
 }
 
 .service_main_inner .service_content {
-    width: 70%;
-    float: left;
+    /* width: 100%; */
+    max-width: 90%;
     background: var(--text-color-w);
-    box-shadow: 2px 0 6px #0000001a;
+    box-shadow: 2px 0 6px #0000001a, -2px 0 6px #0000001a, 0px 2px 6px #0000001a;
     box-sizing: border-box;
     padding-bottom:40px ;
     padding-top: 0!important;
-}
-.service_page.service_page_2 .service_main_inner .service_content {
-    padding-top: var(--top-spacing)!important;
+    margin:25px 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 .service_main_inner .service_sidebar {
     width: 30%;
