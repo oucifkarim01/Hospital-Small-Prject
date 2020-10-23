@@ -153,6 +153,8 @@ body {
 }
 .header_bar .header__logo {
     max-width: 190px;
+}
+.header_bar img {
     height: 100px;
 }
 .branding .hidden-data {
