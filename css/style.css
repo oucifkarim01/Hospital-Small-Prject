@@ -299,7 +299,6 @@ body {
     z-index: -1;
 }
 
-
 .navigation .menu-drop .mega_menu_image {
     height: 200px;
     /* width: 350px; */
@@ -331,7 +330,7 @@ body {
     background: var(--dark-primary-color);
 }
 
-
+/* Simple Drop Menu Style Adapter */
 
 /*End Header*/
 
