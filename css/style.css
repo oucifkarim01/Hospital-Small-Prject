@@ -297,6 +297,7 @@ body {
     align-items: center;
     opacity: 0;
     z-index: -1;
+    min-width: max-content;
 }
 
 .navigation .menu-drop .mega_menu_image {
