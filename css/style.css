@@ -922,6 +922,7 @@ body {
     margin-top: 15px;
     min-height: auto;
     overflow: hidden;
+    border-radius: 7px;
 }
 .bst_services__section .service_inner:hover {
     background: var(--text-color-wg);
