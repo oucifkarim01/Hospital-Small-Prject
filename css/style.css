@@ -334,12 +334,51 @@ body {
 .navigation .primary-menu .menu-item.drop_menu_style  {
     position: relative;
 }
+
+.navigation .primary-menu .menu-item.drop_menu_style .menu-drop {
+    padding: 0;
+}
 .navigation .primary-menu .menu-item.drop_menu_style .menu-drop ul {
     text-align: left;
     display: block;
     width: 100%;
 }
-
+.navigation .primary-menu .menu-item.drop_menu_style .menu-drop ul li{
+    padding: 5px;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .menu-drop ul li a{
+    padding: 8px 5px;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu {
+    position: relative;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #272727;
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
+    border-left: 5px solid #d6009336;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu ul li {
+    padding: 2px;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu a {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .primary-menu .menu-item.drop_menu_style .sub_drop_menu:hover ul{
+    z-index: 50;
+    opacity: 1;
+}
+.navigation .primary-menu .menu-item.drop_menu_style li i {
+    display: none;
+}
+.navigation .primary-menu .menu-item.drop_menu_style li.sub_drop_menu i {
+    display: inline-block;
+}
 /*End Header*/
 
 /* Slide show */
