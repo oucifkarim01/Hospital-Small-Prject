@@ -1441,6 +1441,24 @@ margin-bottom: 10px;
     width: 100%;
     object-fit: cover;
 }
+.service_feature .service_name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+.service_feature .service_name h2 {
+    text-transform: capitalize;
+    font-size: 28px;
+    color: var(--text-color);
+    font-size: 42px;
+    letter-spacing: 2.4px;
+}
 .service_main_inner .service_content  .article {
     padding:30px 40px;
 }
