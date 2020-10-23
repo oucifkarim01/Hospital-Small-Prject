@@ -250,6 +250,9 @@
     .navigation .primary-menu{
         display: block;
     }
+    .navigation .menu-drop .mega_menu_image {
+        height: auto;
+    }
     .navigation .primary-menu .menu-item .menu-drop {
         position: relative;
         z-index: auto;
