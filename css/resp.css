@@ -196,14 +196,25 @@
     .header_bar {
         padding: 0;
     }
-    .header_bar .header__widgets label{
+    .header_bar .branding .header__widgets {
+        flex: 0 0 100%;
+    }
+    .header_bar .branding label{
         display:block;
+        position: absolute;
+        right: 15px;
+        top: 25%;
+        font-size: 38px;
+    }   
+    .header_bar .branding .header_heading {
+        padding: 30px 10px;
     }
     .header_bar .branding{
        min-height: auto;
        background: #e6e6e6;
        box-shadow: var(--slide-shadow);
-       flex-wrap: nowrap;
+       flex-wrap: wrap;
+        position: relative;
     }
     .header_bar .branding .make_appoint.button {
         font-size: 12px;
@@ -416,6 +427,10 @@
     }
 }
 @media screen and (max-width:450px){
+    .header_bar .header__widgets .header_heading h2 {
+        font-size: 20px;
+        font-weight:500;
+    }
     .footer_inner {
         display: block;
     }
