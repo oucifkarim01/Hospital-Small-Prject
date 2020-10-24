@@ -363,6 +363,10 @@
     .bst_services__section .service_item {
         max-width: 100%;
     }
+    /**/
+    .service_page .service_header {
+        --section-height: 275px;
+    }
 }
 /*todo -500px*/
 
@@ -424,6 +428,14 @@
     /* footer section */
     .footer__contact .contact__list .item > * {
         font-size: 14px;
+    }
+
+    /**/
+    .service_page .service_header {
+        --section-height: 195px;
+    }
+    .service_feature .service_name h2{
+        font-size: 28px;
     }
 }
 @media screen and (max-width:450px){
