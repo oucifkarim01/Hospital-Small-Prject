@@ -269,6 +269,7 @@ body {
 }
 .navigation .primary-menu .menu-item {
     flex-grow: 1;
+    text-transform: uppercase;
 }
 .navigation .primary-menu .menu-item a {
     padding: 14px 8px;
@@ -1400,7 +1401,7 @@ margin-bottom: 10px;
     position: relative;
     margin-bottom: 0px;
 }
-.service_page .service_header > .container {
+.service_page .service_header  {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
@@ -1409,6 +1410,11 @@ margin-bottom: 10px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 0;
+}
+.service_page .service_header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .service_page.service_page_2 .service_header {
     --section-height:350px;
