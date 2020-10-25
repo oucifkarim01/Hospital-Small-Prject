@@ -39,6 +39,8 @@
     margin: 0 auto;
     margin-bottom: 15px;
     padding: 30px 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     text-transform: capitalize;
 }
@@ -322,6 +324,8 @@ body {
     z-index: -1;
 }
 .navigation .primary-menu .menu-item.drop_menu_style .menu-drop{
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
 }
 
@@ -333,7 +337,8 @@ body {
 .navigation .menu-drop .mega_menu_image img{
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .navigation .menu-drop .mega_menu_list {
     flex: 1;
@@ -441,7 +446,8 @@ body {
 .slide_show .slide img {
     width: 100%;
     height: 500px;
-    object-fit: fill;
+    -o-object-fit: fill;
+       object-fit: fill;
 }
 
 
@@ -553,6 +559,8 @@ body {
 .slider__titles .title {
     padding: 25px 0;
     border-bottom: 1px solid rgba(0,0,0,1);
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
 }
 .slider__titles .title h2{
@@ -750,7 +758,8 @@ body {
     transition: opacity 0.3s ease-out;
 }
 .about__slider .active__image img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 100%;
 }
@@ -884,7 +893,10 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     
 }
 .services__section .service__icon {
@@ -961,7 +973,8 @@ body {
 .section__inner .service__img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .section__inner .service__text {
     padding: 10px;
@@ -1005,7 +1018,8 @@ body {
 .bst_services__section.style-2 .service_inner .service__img img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .bst_services__section.style-2 .service_inner .service__text {
     z-index: 10;
@@ -1086,6 +1100,8 @@ body {
 }
 .pro__carrer_section .inner .sub_title h3 {
     text-transform: capitalize;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     color: var(--primary-color);
 }
@@ -1214,6 +1230,18 @@ body {
     padding-left: 0;
     color: var(--primary-color);
 }
+.footer_rdv .rdv__form input::-webkit-input-placeholder, .footer_rdv .rdv__form textarea::-webkit-input-placeholder{
+    font-family: var(--font-family);
+}
+.footer_rdv .rdv__form input::-moz-placeholder, .footer_rdv .rdv__form textarea::-moz-placeholder{
+    font-family: var(--font-family);
+}
+.footer_rdv .rdv__form input:-ms-input-placeholder, .footer_rdv .rdv__form textarea:-ms-input-placeholder{
+    font-family: var(--font-family);
+}
+.footer_rdv .rdv__form input::-ms-input-placeholder, .footer_rdv .rdv__form textarea::-ms-input-placeholder{
+    font-family: var(--font-family);
+}
 .footer_rdv .rdv__form input,
 .footer_rdv .rdv__form input::placeholder,
 .footer_rdv .rdv__form textarea,
@@ -1261,6 +1289,18 @@ body {
 
 .contact_form .rdv__form {
     margin-top: 25px;
+}
+.contact_form .rdv__form input::-webkit-input-placeholder, .contact_form .rdv__form textarea::-webkit-input-placeholder{
+    font-family: var(--font-family);
+}
+.contact_form .rdv__form input::-moz-placeholder, .contact_form .rdv__form textarea::-moz-placeholder{
+    font-family: var(--font-family);
+}
+.contact_form .rdv__form input:-ms-input-placeholder, .contact_form .rdv__form textarea:-ms-input-placeholder{
+    font-family: var(--font-family);
+}
+.contact_form .rdv__form input::-ms-input-placeholder, .contact_form .rdv__form textarea::-ms-input-placeholder{
+    font-family: var(--font-family);
 }
 .contact_form .rdv__form input,
 .contact_form .rdv__form input::placeholder,
@@ -1464,7 +1504,10 @@ margin-bottom: 10px;
 }
 .service_page .service_infos_card .levels{
     margin-bottom: 18px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .service_page .service_infos_card .levels .seperater {
     margin:0  5px ;
@@ -1527,7 +1570,8 @@ margin-bottom: 10px;
 .service_content .service_feature img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 350px;
 }
 .service_feature .service_name {
