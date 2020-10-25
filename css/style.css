@@ -611,7 +611,13 @@ body {
     max-width: 40%;
     left: 11%;
     top: 31%;
+    height: 55%;
     z-index: 10;
+}
+.slides__content .slide.slide2 img {
+    /* height: 22%; */
+    height: 100%;
+    width: 100%;
 }
 .slides__content .slide.slide3{
     max-width: 40%;
@@ -622,7 +628,7 @@ body {
 .slides__content .slide.slide4{
     max-width: 30%;
     right: 0;
-    top: 45%;
+    top: 49%;
 }
 /* About us */
 .about__center {
@@ -1054,9 +1060,9 @@ body {
 
 /* parallex section */ 
 .parallex_section_outer {
-    background-image:  linear-gradient(to right, #bb2c47e3 , #3e010c73) , url("../images/dr.png") ;
+    background-image:  linear-gradient(to right, #bb2c47e3 , #3e010c73) , var(--section-background) ;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
